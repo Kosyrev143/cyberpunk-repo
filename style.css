@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    color: #0f1111;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background-image: url('./assets/header/back-header.svg');
+    color: #fff;
+    height: 1000px;
+    padding: 20px;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+}
+
+.grid-item-brand {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 32px;
+    width: 100%; /* Ensures the grid occupies the full available space */
+    margin: 0 300px;
+}
+
+.logo {
+    grid-column: 1 / span 2; 
+    justify-self: start; 
+}
+
+.logo img {
+    height: 74px;
+}
