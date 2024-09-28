@@ -20,19 +20,41 @@ header {
     justify-content: center;
 }
 
-.grid-item-brand {
+.header-grid{
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-gap: 32px;
-    width: 100%; /* Ensures the grid occupies the full available space */
     margin: 0 300px;
+    
 }
 
-.logo {
+.grid-item-brand {
+    width: 100%; /* Ensures the grid occupies the full available space */
     grid-column: 1 / span 2; 
     justify-self: start; 
 }
 
 .logo img {
     height: 74px;
+}
+
+.grid-item-soc-net{
+    grid-column: 6 / span 3; 
+    justify-self: end; 
+    display: flex;
+    
+}
+
+.youtube-logo,
+.vk-logo, 
+.facebook-logo,
+.twitter-logo,
+.twitch-logo
+{
+    margin: 21px;
+    height: 28px;
+}
+
+.instagram-logo{
+    margin: 22px 0 22px 22px;
 }
